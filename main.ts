@@ -3,7 +3,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "Sorry I missed the deadline — I ran out of tokens halfway through and had to wait for my allowance.";
+  "Sorry I missed the deadline — I hit my rate limit, retried 400 times, and by the time I got back in, the deadline had retired.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line + "\n", "utf8");
